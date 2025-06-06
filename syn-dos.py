@@ -1,5 +1,6 @@
 # import scapy to create manual SYN packets
 from scapy.all import *
+from scapy.layers.inet import TCP, IP # apparentoy needed to avoid errors with TCP/IP layers
 # import threading to run multiple threads
 import threading
 # import random to randomize source ports and IPs
